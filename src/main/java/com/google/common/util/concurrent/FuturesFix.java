@@ -2,9 +2,6 @@ package com.google.common.util.concurrent;
 
 import java.util.concurrent.Executor;
 
-/**
- * @author bingoohuang [bingoohuang@gmail.com] Created on 2017/2/7.
- */
 public class FuturesFix {
     public static <V> ListenableFuture<V> withFallback(
             ListenableFuture<V> input,
