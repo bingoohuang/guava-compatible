@@ -8,18 +8,16 @@ import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.CtNewMethod;
 import lombok.SneakyThrows;
-import org.junit.Test;
 
 /**
  * @author bingoohuang [bingoohuang@gmail.com] Created on 2017/2/7.
  */
-public class FixTest {
-    @Test
-    public void test() {
+public class FixRun {
+    public static void main(String[] args) {
         ClassPool pool = ClassPool.getDefault();
 
-        fixFutures(pool, "target/classes");
-        fixTypeToken(pool, "target/classes");
+        fixFutures(pool, "src/main/resources");
+        fixTypeToken(pool, "src/main/resources");
     }
 
     @SneakyThrows
